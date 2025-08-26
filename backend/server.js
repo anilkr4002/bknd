@@ -20,7 +20,7 @@ fs.readFile("./Resume.pdf", async (err, data) => {
   const parsed = await pdfParse(data);
   resumeText = parsed.text;
   console.log("✅ Resume loaded successfully. First 500 chars:");
-  console.log(resumeText.substring(0, 500)); // Log a sample
+  console.log(resumeText.substring(0, 4000)); // Log a sample
 });
 
 // API to return the extracted resume text
