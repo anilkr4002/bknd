@@ -12,7 +12,7 @@ app.use(express.json());
 let resumeText = "";
 
 // Load and extract text from the resume
-fs.readFile("./Resume_.pdf", async (err, data) => {
+fs.readFile("./Resume.pdf", async (err, data) => {
     if (err) {
       console.error("❌ Error reading PDF:", err);
       return;
